@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css">
+    <title>payment form</title>
+  </head>
+  <body>
+<div class="container">
+    <form action="">
+      <h1 class= "main_heading">payment form</h1>
+      <h2>contact information</h2>
+      <p>Name: <input type="text" name="name" /></p>
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male<input type="radio" name="gender" id="male" /> Female<input
+            type="radio"
+            name="gender"
+            id="female"
+          />
+        </p>
+      </fieldset>
+      <p>
+        Adress:<textarea
+          name="adress"
+          id="adress"
+          cols="100"
+          rows="8"
+        ></textarea>
+      </p>
+      <p>Email:<input type="email" name="email" id="email" /></p>
+      <p>Pincode:<input type="number" name="pincode" id="pincode" /></p>
+      <p>Total:<input type="number" name="Total" id="total" placeholder="$80" /></p>
+      <h2>Payment Information</h2>
+      <p>Card type</p>
+      <select name="card_type" id="card_type">
+        <option value="">--Select a Card Type--</option>
+        <option value="visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="masteracard">MasterCard</option>
+      </select>
+      <hr />
+      <p>
+        Card Number<input type="number" name="card_number" id="card_number" required />
+        <!--here required keyword  is used so that one can asssure that this field has to be mandatorily field by the user else they cannot fill the form and proceed further-->
+      </p>
+      <p>CVV<input type="password" name="cvv" id="cvv" /></p>
+      <p>
+        expiry date<input
+          type="date"
+          name="expiration_date"
+          id="expiration_date"
+        />
+      </p>
+      <p>
+        <input type="submit" value="pay_now">
+      </p>
+    </form>
+</div>
+  </body>
+</html>
+
